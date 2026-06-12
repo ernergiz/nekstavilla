@@ -1,0 +1,1616 @@
+﻿<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nekstAvilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-ui.css" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="site-container">
+            <div class="top-bar-inner d-flex align-items-center justify-content-end">
+                <a href="#" class="top-bar-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="site-container">
+            <nav class="navbar navbar-expand-xl p-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="nekstAvilla Logo" class="header-logo">
+                </a>
+
+                <div class="header-actions d-flex align-items-center">
+                    <div class="header-icons d-flex align-items-center">
+                        <a href="#" class="header-icon" aria-label="Ara"><i class="bi bi-search"></i></a>
+                        <a href="hesabim.html" class="header-icon" aria-label="Hesabım">
+                            <i class="bi bi-person"></i>
+                        </a> <a href="favoriler.html" class="header-icon position-relative" aria-label="Favoriler">
+                            <i class="bi bi-heart"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                        <a href="sepet.html" class="header-icon position-relative" aria-label="Sepet">
+                            <i class="bi bi-cart3"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Menüyü Aç/Kapat">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link" href="yeni-gelenler.html">Yeni Gelenler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ev & Yaşam</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kırtasiye</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aksesuar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Çanta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hediye Setleri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">İndirim</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pm-minik-banner">
+        <div class="banner-maske"></div> <img src="../images/backg.png" alt="nekstAvilla Yeni Gelenler"
+            class="banner-gorsel">
+
+        <div class="banner-icerik">
+            <h1>Sepetim</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="index.html">Anasayfa</a> > <span>Sepetim</span>
+    </div>
+
+    <section class="checkout-page">
+
+        <div class="site-container">
+
+            <div class="checkout-layout">
+
+                <!-- LEFT -->
+
+                <div class="checkout-left">
+
+                    <h2 class="checkout-title">
+                        İletişim Bilgileri
+                    </h2>
+
+                    <div class="checkout-group">
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="E-Posta Adresi">
+                    </div>
+
+                    <!-- ADDRESS -->
+
+                    <h2 class="checkout-title mt-5">
+                        Sipariş Adresi
+                    </h2>
+
+                    <div class="checkout-group">
+                        <input type="text" id="country" name="country" autocomplete="shipping country-name"
+                            placeholder="Ülke/Bölge">
+                    </div>
+
+                    <div class="checkout-row">
+
+                        <input type="text" id="given-name" name="given-name" autocomplete="shipping given-name"
+                            placeholder="Ad">
+
+                        <input type="text" id="family-name" name="family-name" autocomplete="shipping family-name"
+                            placeholder="Soyad">
+
+                    </div>
+
+                    <div class="checkout-group">
+                        <input type="text" id="company" name="organization" autocomplete="shipping organization"
+                            placeholder="Firma(isteğe bağlı)">
+                    </div>
+
+                    <div class="checkout-group">
+                        <input type="text" id="address-line1" name="address-line1" autocomplete="shipping address-line1"
+                            placeholder="Adres">
+                    </div>
+
+                    <button class="checkout-add-more" type="button" id="openAddressModal">
+                        + Ekle
+                    </button>
+                    <div class="checkout-row">
+
+                        <input type="text" id="district" name="address-level3" autocomplete="shipping address-level3"
+                            placeholder="İlçe/Semt">
+
+                        <input type="text" id="city" name="address-level2" autocomplete="shipping address-level2"
+                            placeholder="Şehir">
+
+                    </div>
+
+                    <div class="checkout-row">
+
+                        <input type="text" id="postal-code" name="postal-code" autocomplete="shipping postal-code"
+                            placeholder="Posta Kodu">
+
+                        <input type="tel" id="tel" name="tel" autocomplete="shipping tel" placeholder="Telefon">
+
+                    </div>
+
+                    <!-- CHECKBOX -->
+
+                    <label class="checkout-checkbox">
+
+                        <input type="checkbox">
+
+                        <span>
+                            Faturalandırma için aynı adresi kullanılır.
+                        </span>
+
+                    </label>
+
+                    <h2 class="checkout-title payment-title">
+                        Ödeme Seçenekleri
+                    </h2>
+
+                    <div class="payment-box payment-option active" data-payment="bank">
+
+                        <div class="payment-radio"></div>
+
+                        <div class="payment-content">
+
+                            <h4>Banka havalesi/EFT</h4>
+
+                            <p>
+                                Ödemenizi doğrudan banka hesabımıza yapınız.
+                                Lütfen ilgili Sipariş Numarası ödemenizin açıklama kısmına yazınız.
+                                Ödemeniz onaylanmadıkça siparişiniz gönderilmeyecektir.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="payment-simple payment-option" data-payment="card">
+
+                        <div class="payment-circle"></div>
+
+                        <span>Kredi / Banka Kartı</span>
+
+                    </div>
+
+                    <div class="card-payment-form" id="cardPaymentForm">
+
+                        <div class="card-form-group">
+                            <label>Kart Üzerindeki İsim</label>
+
+                            <input type="text" id="cardHolder" name="cardHolder" autocomplete="cc-name"
+                                placeholder="Ad Soyad">
+                        </div>
+
+                        <div class="card-form-group">
+                            <label>Kart Numarası</label>
+
+                            <input type="text" id="cardNumber" name="cardNumber" autocomplete="cc-number"
+                                inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000">
+                        </div>
+
+                        <div class="card-form-row">
+
+                            <div class="card-form-group">
+                                <label>Son Kullanma Tarihi</label>
+
+                                <input type="text" id="cardExpiry" name="cardExpiry" autocomplete="cc-exp"
+                                    inputmode="numeric" maxlength="5" placeholder="AA/YY">
+                            </div>
+
+                            <div class="card-form-group">
+                                <label>CVV</label>
+
+                                <input type="text" id="cardCvv" name="cardCvv" autocomplete="cc-csc" inputmode="numeric"
+                                    maxlength="4" placeholder="CVV">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- NOTE -->
+
+                    <label class="checkout-checkbox note-checkbox">
+
+                        <input type="checkbox">
+
+                        <span>
+                            Siparişinize not ekleyin
+                        </span>
+
+                    </label>
+
+                    <div class="checkout-policy">
+                        Satın alma işleminize devam ederek,
+                        Şartlar ve koşullar ve Gizlilik Politikası beyanlarımızı kabul etmiş olursunuz.
+                    </div>
+
+                    <!-- ACTIONS -->
+
+                    <div class="order-form-error" id="orderFormError"></div>
+
+                    <div class="checkout-actions">
+
+                        <a href="sepet.html" class="back-cart">
+                            &lt; Sepete Geri Dön
+                        </a>
+
+                        <button class="place-order-btn" type="button" id="placeOrderBtn">
+                            Sipariş Ver
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="cart-summary">
+
+                    <h3>Sipariş Özeti</h3>
+
+                    <div id="checkoutSummaryItems"></div>
+
+                    <div class="summary-line">
+                        <span>Ürünler</span>
+                        <span id="summaryProductTotal">0 TL</span>
+                    </div>
+
+                    <div class="summary-line">
+
+                        <span>Kargo</span>
+
+                        <div class="shipping-free">
+                            Bedava
+                        </div>
+
+                        <span class="freeCargo">30 TL</span>
+
+                    </div>
+
+                    <div class="summary-total-box">
+
+                        <p>Sepet Toplamı</p>
+
+                        <h4 id="checkoutTotal">0 TL</h4>
+                        <div class="summary-note">
+                            <i class="bi bi-info-circle"></i>
+                            Fiyata kdv dahil tüm yasal ücretlendirmeler dahildir.
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="address-modal-overlay" id="addressModalOverlay">
+
+                    <div class="address-modal">
+
+                        <button class="address-modal-close" type="button" id="closeAddressModal">
+                            <i class="bi bi-x"></i>
+                        </button>
+
+                        <h3>Yeni Adres Bilgileri</h3>
+
+                        <div class="address-modal-group">
+                            <label>Adres Adı</label>
+                            <input type="text" id="modalAddressTitle" placeholder="Örn. İş Yerim, Ev Adresim...">
+                        </div>
+
+                        <div class="address-modal-row">
+
+                            <div class="address-modal-group">
+                                <label>Şehir</label>
+
+                                <select id="modalCity">
+                                    <option value="">Şehir</option>
+                                    <option value="Sakarya">Sakarya</option>
+                                    <option value="İstanbul">İstanbul</option>
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="İzmir">İzmir</option>
+                                    <option value="Kocaeli">Kocaeli</option>
+                                    <option value="Bursa">Bursa</option>
+                                </select>
+                            </div>
+
+                            <div class="address-modal-group">
+                                <label>İlçe</label>
+
+                                <select id="modalDistrict" disabled>
+                                    <option value="">Önce şehir seçin</option>
+                                </select>
+                            </div>
+
+                            <div class="address-modal-group">
+                                <label>Mahalle</label>
+
+                                <select id="modalNeighborhood" disabled>
+                                    <option value="">Önce ilçe seçin</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="address-modal-group">
+                            <label>Adres</label>
+
+                            <textarea id="modalFullAddress" placeholder="Adres"></textarea>
+                        </div>
+
+                        <label class="address-save-check">
+                            <input type="checkbox" id="saveAddressCheck">
+                            <span>Adresi Kaydet</span>
+                        </label>
+
+                        <div class="address-modal-actions">
+
+                            <button type="button" class="address-add-btn" id="saveModalAddress">
+                                Adresi Ekle
+                            </button>
+
+                            <button type="button" class="address-cancel-btn" id="cancelAddressModal">
+                                Vazgeç
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-top">
+
+                <div class="footer-brand-area">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo2.png" alt="Eticaretiz Logo">
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Bizi Tanıyın!</h4>
+                        <a href="#">Hakkımızda</a>
+                        <a href="#">Blog</a>
+                        <a href="#">İletişim</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Müşteri Hizmetleri</h4>
+                        <a href="#">İade Politikası</a>
+                        <a href="#">Kargo Bilgileri</a>
+                        <a href="#">Sipariş Takibi</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Yardım</h4>
+                        <a href="#">Destek Merkezi ve SSS</a>
+                        <a href="#">Güvenlik Merkezi</a>
+                        <a href="#">Erişebilirlik</a>
+                    </div>
+
+                    <div class="footer-col footer-social-col">
+                        <h4>Sosyal Medya</h4>
+                        <div class="footer-socials">
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-cert-payments">
+                        <div class="footer-cert-block">
+                            <h4>Güvenlik Sertifikaları</h4>
+
+                            <div class="footer-logo-row footer-logo-row-security">
+                                <span class="footer-logo-chip chip-pci">
+                                    <img src="images/pci.png" alt="PCI DSS">
+                                </span>
+
+                                <span class="footer-logo-chip chip-visa-secure">
+                                    <img src="images/visa.png" alt="Visa Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-id">
+                                    <img src="images/ID.png" alt="ID Check">
+                                </span>
+
+                                <span class="footer-logo-chip chip-safe">
+                                    <img src="images/safe.png" alt="SafeKey">
+                                </span>
+
+                                <span class="footer-logo-chip chip-protect">
+                                    <img src="images/protect.png" alt="ProtectBuy">
+                                </span>
+
+                                <span class="footer-logo-chip chip-jcb-secure">
+                                    <img src="images/jcb.png" alt="JCB Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-apwg">
+                                    <img src="images/apwg.png" alt="APWG">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="footer-cert-block">
+                            <h4>Ödeme</h4>
+
+                            <div class="footer-logo-row footer-logo-row-payment-top">
+                                <span class="footer-logo-chip chip-visa2">
+                                    <img src="images/visa2.png" alt="Visa">
+                                </span>
+
+                                <span class="footer-logo-chip chip-master">
+                                    <img src="images/master.png" alt="Mastercard">
+                                </span>
+
+
+
+                                <span class="footer-logo-chip chip-disc">
+                                    <img src="images/disc.png" alt="Discover">
+                                </span>
+
+
+                                <span class="footer-logo-chip chip-cash">
+                                    <img src="images/cash.png" alt="Cash">
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 nekstAvilla</p>
+
+                    <div class="footer-bottom-links">
+                        <a href="#">Kullanım Şartları</a>
+                        <a href="#">Gizlilik Politikası</a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /* =========================================
+        KULLANICIYA ÖZEL SEPET / FAVORİ SİSTEMİ
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function aktifKullaniciIdGetir() {
+            const aktifKullanici = aktifKullaniciGetir();
+            return aktifKullanici ? aktifKullanici.id : null;
+        }
+
+        function sepetKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `sepet_${userId}`;
+        }
+
+        function favorilerKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `favoriler_${userId}`;
+        }
+
+        function sepetiGetir() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(sepetKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function sepetiKaydet(sepet) {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.setItem(sepetKey, JSON.stringify(sepet));
+        }
+
+        function sepetiTemizle() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.removeItem(sepetKey);
+        }
+
+        function favorileriGetir() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(favorilerKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.setItem(favorilerKey, JSON.stringify(favoriler));
+        }
+
+        function favorileriTemizle() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.removeItem(favorilerKey);
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+    <script>
+        /* =========================================
+        KULLANICIYA ÖZEL SEPET / FAVORİ SİSTEMİ
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function aktifKullaniciIdGetir() {
+            const aktifKullanici = aktifKullaniciGetir();
+            return aktifKullanici ? aktifKullanici.id : null;
+        }
+
+        function sepetKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `sepet_${userId}`;
+        }
+
+        function favorilerKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `favoriler_${userId}`;
+        }
+
+        function sepetiGetir() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(sepetKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function sepetiKaydet(sepet) {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.setItem(sepetKey, JSON.stringify(sepet));
+        }
+
+        function sepetiTemizle() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.removeItem(sepetKey);
+        }
+
+        function favorileriGetir() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(favorilerKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.setItem(favorilerKey, JSON.stringify(favoriler));
+        }
+
+        function favorileriTemizle() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.removeItem(favorilerKey);
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        ÖDEME SAYFASI - SEPET SAYACI + SİPARİŞ ÖZETİ
+        ========================================= */
+
+        function sepetiGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("sepet")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function fiyatFormatla(fiyat) {
+            return Number(fiyat || 0).toLocaleString("tr-TR", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }) + " TL";
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (sepetBadge) {
+                sepetBadge.innerText = toplamAdet;
+                return;
+            }
+
+            const badges = document.querySelectorAll(".header-icon .icon-badge");
+
+            if (badges.length > 1) {
+                badges[1].innerText = toplamAdet;
+            }
+        }
+
+        function checkoutSummaryYukle() {
+            const sepet = sepetiGetir();
+
+            const summaryContainer = document.getElementById("checkoutSummaryItems");
+            const summaryProductTotal = document.getElementById("summaryProductTotal");
+
+            const checkoutTotal = document.getElementById("checkoutTotal");
+            const summaryTotal = document.getElementById("summaryTotal");
+
+            let html = "";
+            let toplam = 0;
+
+            if (sepet.length === 0) {
+                if (summaryContainer) {
+                    summaryContainer.innerHTML = `
+                <div class="checkout-empty-summary">
+                    Sepetiniz şu anda boş.
+                </div>
+            `;
+                }
+
+                if (summaryProductTotal) {
+                    summaryProductTotal.innerText = "0,00 TL";
+                }
+
+                if (checkoutTotal) {
+                    checkoutTotal.innerText = "0,00 TL";
+                }
+
+                if (summaryTotal) {
+                    summaryTotal.innerText = "0,00 TL";
+                }
+
+                return;
+            }
+
+            sepet.forEach((urun) => {
+                const fiyat = Number(urun.fiyat || 0);
+                const adet = Number(urun.adet || 0);
+                const urunToplam = fiyat * adet;
+
+                toplam += urunToplam;
+
+                html += `
+            <div class="checkout-summary-item">
+
+                <div class="checkout-summary-item-left">
+
+                    <img src="${urun.resim}" alt="${urun.ad}">
+
+                    <div>
+                        <h4>${urun.ad}</h4>
+
+                        <span>
+                            ${adet} ${urun.birim || "adet"}
+                        </span>
+                    </div>
+
+                </div>
+
+                <strong>
+                    ${fiyatFormatla(urunToplam)}
+                </strong>
+
+            </div>
+        `;
+            });
+
+            if (summaryContainer) {
+                summaryContainer.innerHTML = html;
+            }
+
+            if (summaryProductTotal) {
+                summaryProductTotal.innerText = fiyatFormatla(toplam);
+            }
+
+            if (checkoutTotal) {
+                checkoutTotal.innerText = fiyatFormatla(toplam);
+            }
+
+            if (summaryTotal) {
+                summaryTotal.innerText = fiyatFormatla(toplam);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            sepetSayaciniGuncelle();
+            checkoutSummaryYukle();
+        });
+    </script>
+
+
+    <script>
+        /* =========================================
+        YENİ ADRES MODAL - İL / İLÇE / MAHALLE BAĞIMLI
+        ========================================= */
+
+        const openAddressModalBtn = document.getElementById("openAddressModal");
+        const addressModalOverlay = document.getElementById("addressModalOverlay");
+        const closeAddressModalBtn = document.getElementById("closeAddressModal");
+        const cancelAddressModalBtn = document.getElementById("cancelAddressModal");
+        const saveModalAddressBtn = document.getElementById("saveModalAddress");
+
+        const modalCity = document.getElementById("modalCity");
+        const modalDistrict = document.getElementById("modalDistrict");
+        const modalNeighborhood = document.getElementById("modalNeighborhood");
+
+        const adresVerileri = {
+            "Sakarya": {
+                "Serdivan": ["Kemalpaşa", "Arabacıalanı", "İstiklal", "Bahçelievler", "Yazlık"],
+                "Adapazarı": ["Semerciler", "Tığcılar", "Cumhuriyet", "Tekeler", "Yağcılar"],
+                "Erenler": ["Erenler", "Hacıoğlu", "Küpçüler", "Tabakhane", "Yeni"],
+                "Arifiye": ["Hanlıköy", "Neviye", "Arifbey", "Fatih", "Karaaptiler"]
+            },
+
+            "İstanbul": {
+                "Kadıköy": ["Moda", "Caferağa", "Fenerbahçe", "Koşuyolu", "Erenköy"],
+                "Üsküdar": ["Altunizade", "Kuzguncuk", "Beylerbeyi", "Acıbadem", "Çengelköy"],
+                "Beşiktaş": ["Levent", "Etiler", "Ortaköy", "Akatlar", "Dikilitaş"],
+                "Bakırköy": ["Ataköy", "Yeşilköy", "Zeytinlik", "Kartaltepe", "Osmaniye"]
+            },
+
+            "Ankara": {
+                "Çankaya": ["Kızılay", "Bahçelievler", "Ayrancı", "Dikmen", "Oran"],
+                "Keçiören": ["Etlik", "Aktepe", "İncirli", "Ufuktepe", "Sanatoryum"],
+                "Mamak": ["Abidinpaşa", "Boğaziçi", "Dutluk", "Akdere", "Şafaktepe"],
+                "Yenimahalle": ["Batıkent", "Demetevler", "Karşıyaka", "İvedik", "Ragıp Tüzün"]
+            },
+
+            "İzmir": {
+                "Konak": ["Alsancak", "Göztepe", "Güzelyalı", "Hatay", "Mithatpaşa"],
+                "Karşıyaka": ["Bostanlı", "Mavişehir", "Alaybey", "Donanmacı", "Nergiz"],
+                "Bornova": ["Kazımdirik", "Erzene", "Atatürk", "Yeşilova", "İnönü"],
+                "Buca": ["Şirinyer", "Adatepe", "Kozağaç", "Efeler", "Yıldız"]
+            },
+
+            "Kocaeli": {
+                "İzmit": ["Yenişehir", "Alikahya", "Yahyakaptan", "Bekirdere", "Kuruçeşme"],
+                "Gebze": ["Osman Yılmaz", "Hacıhalil", "Beylikbağı", "Tatlıkuyu", "Barış"],
+                "Derince": ["Çenedağ", "Yenikent", "Sırrıpaşa", "Mersincik", "Dumlupınar"],
+                "Kartepe": ["Ataevler", "Köseköy", "Uzunçiftlik", "Maşukiye", "Derbent"]
+            },
+
+            "Bursa": {
+                "Osmangazi": ["Altıparmak", "Çekirge", "Demirtaş", "Hamitler", "Soğanlı"],
+                "Nilüfer": ["Görükle", "Ataevler", "Beşevler", "Özlüce", "İhsaniye"],
+                "Yıldırım": ["Davutkadı", "Erikli", "Millet", "Setbaşı", "Yeşilyayla"],
+                "Mudanya": ["Güzelyalı", "Halitpaşa", "Mütareke", "Bademli", "Çağrışan"]
+            }
+        };
+
+        function addressModalAc() {
+            addressModalOverlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function addressModalKapat() {
+            addressModalOverlay.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+
+        function addressModalTemizle() {
+            document.getElementById("modalAddressTitle").value = "";
+            modalCity.value = "";
+
+            modalDistrict.innerHTML = `<option value="">Önce şehir seçin</option>`;
+            modalDistrict.disabled = true;
+
+            modalNeighborhood.innerHTML = `<option value="">Önce ilçe seçin</option>`;
+            modalNeighborhood.disabled = true;
+
+            document.getElementById("modalFullAddress").value = "";
+            document.getElementById("saveAddressCheck").checked = false;
+        }
+
+        function ilceleriYukle(secilenIl) {
+            modalDistrict.innerHTML = `<option value="">İlçe</option>`;
+            modalNeighborhood.innerHTML = `<option value="">Önce ilçe seçin</option>`;
+            modalNeighborhood.disabled = true;
+
+            if (!secilenIl || !adresVerileri[secilenIl]) {
+                modalDistrict.disabled = true;
+                return;
+            }
+
+            Object.keys(adresVerileri[secilenIl]).forEach((ilce) => {
+                const option = document.createElement("option");
+                option.value = ilce;
+                option.textContent = ilce;
+                modalDistrict.appendChild(option);
+            });
+
+            modalDistrict.disabled = false;
+        }
+
+        function mahalleleriYukle(secilenIl, secilenIlce) {
+            modalNeighborhood.innerHTML = `<option value="">Mahalle</option>`;
+
+            if (!secilenIl || !secilenIlce || !adresVerileri[secilenIl]?.[secilenIlce]) {
+                modalNeighborhood.disabled = true;
+                return;
+            }
+
+            adresVerileri[secilenIl][secilenIlce].forEach((mahalle) => {
+                const option = document.createElement("option");
+                option.value = mahalle;
+                option.textContent = mahalle;
+                modalNeighborhood.appendChild(option);
+            });
+
+            modalNeighborhood.disabled = false;
+        }
+
+        if (openAddressModalBtn) {
+            openAddressModalBtn.addEventListener("click", addressModalAc);
+        }
+
+        if (closeAddressModalBtn) {
+            closeAddressModalBtn.addEventListener("click", addressModalKapat);
+        }
+
+        if (cancelAddressModalBtn) {
+            cancelAddressModalBtn.addEventListener("click", addressModalKapat);
+        }
+
+        if (addressModalOverlay) {
+            addressModalOverlay.addEventListener("click", function (e) {
+                if (e.target === addressModalOverlay) {
+                    addressModalKapat();
+                }
+            });
+        }
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                addressModalKapat();
+            }
+        });
+
+        if (modalCity) {
+            modalCity.addEventListener("change", function () {
+                ilceleriYukle(this.value);
+            });
+        }
+
+        if (modalDistrict) {
+            modalDistrict.addEventListener("change", function () {
+                mahalleleriYukle(modalCity.value, this.value);
+            });
+        }
+
+        if (saveModalAddressBtn) {
+            saveModalAddressBtn.addEventListener("click", function () {
+                const addressTitle = document.getElementById("modalAddressTitle").value.trim();
+                const city = modalCity.value.trim();
+                const district = modalDistrict.value.trim();
+                const neighborhood = modalNeighborhood.value.trim();
+                const fullAddress = document.getElementById("modalFullAddress").value.trim();
+                const saveAddress = document.getElementById("saveAddressCheck").checked;
+
+                if (!city || !district || !neighborhood || !fullAddress) {
+                    alert("Lütfen şehir, ilçe, mahalle ve adres alanlarını doldurun.");
+                    return;
+                }
+
+                const finalAddress = `${neighborhood} Mah. ${fullAddress}`;
+
+                const countryInput = document.getElementById("country");
+                const cityInput = document.getElementById("city");
+                const districtInput = document.getElementById("district");
+                const addressInput = document.getElementById("address-line1");
+
+                if (countryInput) {
+                    countryInput.value = "Türkiye";
+                }
+
+                if (cityInput) {
+                    cityInput.value = city;
+                }
+
+                if (districtInput) {
+                    districtInput.value = district;
+                }
+
+                if (addressInput) {
+                    addressInput.value = finalAddress;
+                }
+
+                if (saveAddress) {
+                    const kayitliAdresler = JSON.parse(localStorage.getItem("kayitliAdresler")) || [];
+
+                    kayitliAdresler.push({
+                        adresAdi: addressTitle || "Yeni Adres",
+                        ulke: "Türkiye",
+                        sehir: city,
+                        ilce: district,
+                        mahalle: neighborhood,
+                        adres: fullAddress
+                    });
+
+                    localStorage.setItem("kayitliAdresler", JSON.stringify(kayitliAdresler));
+                }
+
+                addressModalTemizle();
+                addressModalKapat();
+            });
+        }
+    </script>
+
+    <script>
+        /* =========================================
+        SİPARİŞ VER - FORM KONTROL + YÖNLENDİRME
+        ========================================= */
+
+        function siparisNumarasiOlustur() {
+            const randomNumber = Math.floor(100000 + Math.random() * 900000);
+            return "IT" + randomNumber;
+        }
+
+        function inputBosMu(id) {
+            const input = document.getElementById(id);
+
+            if (!input) {
+                return true;
+            }
+
+            return input.value.trim() === "";
+        }
+
+        function siparisFormunuKontrolEt() {
+            const zorunluAlanlar = [
+                "email",
+                "country",
+                "given-name",
+                "family-name",
+                "address-line1",
+                "district",
+                "city",
+                "postal-code",
+                "tel"
+            ];
+
+            return zorunluAlanlar.every((id) => {
+                return !inputBosMu(id);
+            });
+        }
+
+        const placeOrderBtn = document.getElementById("placeOrderBtn");
+        const orderFormError = document.getElementById("orderFormError");
+
+        if (placeOrderBtn) {
+            placeOrderBtn.addEventListener("click", function () {
+
+                const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+                if (sepet.length === 0) {
+                    orderFormError.innerText = "Sepetiniz boş. Sipariş verebilmek için sepetinize ürün ekleyin.";
+                    orderFormError.classList.add("active");
+                    return;
+                }
+
+                const formGecerliMi = siparisFormunuKontrolEt();
+
+                if (!formGecerliMi) {
+                    orderFormError.innerText = "Bütün bilgileri eksiksiz doldurduğunuzdan emin olun.";
+                    orderFormError.classList.add("active");
+                    return;
+                }
+
+                orderFormError.classList.remove("active");
+
+                const siparisNo = siparisNumarasiOlustur();
+
+                const siparisBilgisi = {
+                    siparisNo: siparisNo,
+                    tarih: new Date().toISOString(),
+                    urunler: sepet
+                };
+
+                localStorage.setItem("sonSiparis", JSON.stringify(siparisBilgisi));
+
+                localStorage.removeItem("sepet");
+
+                window.location.href = "siparis-basarili.html";
+
+            });
+        }
+    </script>
+
+    <script>
+        /* =========================================
+        FAVORİLER SİSTEMİ
+        ========================================= */
+
+        function favorileriGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("favoriler")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            localStorage.setItem("favoriler", JSON.stringify(favoriler));
+        }
+
+        function favoriSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullanici) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        function favoriFiyatMetniniSayiyaCevir(fiyatText) {
+            let temizFiyat = fiyatText
+                .replace(/[^\d.,]/g, "")
+                .trim();
+
+            if (temizFiyat.includes(",") && temizFiyat.includes(".")) {
+                temizFiyat = temizFiyat.replace(/\./g, "").replace(",", ".");
+            } else if (temizFiyat.includes(",")) {
+                temizFiyat = temizFiyat.replace(",", ".");
+            }
+
+            return parseFloat(temizFiyat) || 0;
+        }
+
+        function favorideVarMi(id) {
+            const favoriler = favorileriGetir();
+            return favoriler.some((urun) => urun.id === id);
+        }
+
+        function favoriEkleCikar(urun) {
+            let favoriler = favorileriGetir();
+
+            const varolanIndex = favoriler.findIndex((item) => item.id === urun.id);
+
+            if (varolanIndex > -1) {
+                favoriler.splice(varolanIndex, 1);
+            } else {
+                favoriler.push(urun);
+            }
+
+            favorileriKaydet(favoriler);
+            favoriSayaciniGuncelle();
+            favoriButonlariniGuncelle();
+        }
+
+        function favoriButonlariniGuncelle() {
+            const favoriler = favorileriGetir();
+
+            document.querySelectorAll(".product-card").forEach((card) => {
+                const id = card.dataset.id;
+                const favBtn = card.querySelector(".product-fav");
+                const favIcon = favBtn?.querySelector("i");
+
+                if (!id || !favBtn || !favIcon) return;
+
+                const aktifMi = favoriler.some((urun) => urun.id === id);
+
+                if (aktifMi) {
+                    favBtn.classList.add("active");
+                    favIcon.className = "bi bi-heart-fill";
+                } else {
+                    favBtn.classList.remove("active");
+                    favIcon.className = "bi bi-heart";
+                }
+            });
+
+            const detailPage = document.querySelector(".product-detail-page");
+            const wishlistBtn = document.querySelector(".wishlist-btn");
+            const wishlistIcon = wishlistBtn?.querySelector("i");
+
+            if (detailPage && wishlistBtn && wishlistIcon) {
+                const id = detailPage.dataset.id;
+                const aktifMi = favoriler.some((urun) => urun.id === id);
+
+                if (aktifMi) {
+                    wishlistBtn.classList.add("active");
+                    wishlistIcon.className = "bi bi-heart-fill";
+                } else {
+                    wishlistBtn.classList.remove("active");
+                    wishlistIcon.className = "bi bi-heart";
+                }
+            }
+        }
+
+        function karttanFavoriUrunOlustur(card) {
+            const urunId = card.dataset.id;
+            const urunBirim = card.dataset.birim || "adet";
+            const urunRenk = card.dataset.renk || "Standart";
+
+            const urunAd = card.querySelector("h3")?.innerText.trim();
+            const urunKategori = card.querySelector(".product-category")?.innerText.trim() || "Ürün";
+            const urunFiyatText = card.querySelector(".product-price")?.innerText.trim();
+            const urunResim = card.querySelector(".product-image")?.getAttribute("src");
+
+            if (!urunId || !urunAd || !urunFiyatText || !urunResim) {
+                console.warn("Favori için ürün bilgisi eksik:", card);
+                return null;
+            }
+
+            return {
+                id: urunId,
+                ad: urunAd,
+                kategori: urunKategori,
+                fiyat: favoriFiyatMetniniSayiyaCevir(urunFiyatText),
+                resim: urunResim,
+                birim: urunBirim,
+                renk: urunRenk
+            };
+        }
+
+        function detaydanFavoriUrunOlustur() {
+            const detailPage = document.querySelector(".product-detail-page");
+
+            if (!detailPage) return null;
+
+            const urunId = detailPage.dataset.id;
+            const urunBirim = detailPage.dataset.birim || "adet";
+            const urunRenk = detailPage.dataset.renk || "Standart";
+
+            const urunAd = document.querySelector(".product-detail-title")?.innerText.trim();
+            const urunFiyatText = document.querySelector(".product-price-box")?.innerText.trim();
+            const urunResim = document.getElementById("mainProductImage")?.getAttribute("src");
+
+            if (!urunId || !urunAd || !urunFiyatText || !urunResim) {
+                console.warn("Favori için ürün detay bilgisi eksik.");
+                return null;
+            }
+
+            return {
+                id: urunId,
+                ad: urunAd,
+                kategori: "Ürün",
+                fiyat: favoriFiyatMetniniSayiyaCevir(urunFiyatText),
+                resim: urunResim,
+                birim: urunBirim,
+                renk: urunRenk
+            };
+        }
+
+        document.addEventListener("click", function (e) {
+            const productFavBtn = e.target.closest(".product-fav");
+
+            if (productFavBtn) {
+                e.preventDefault();
+
+                const card = productFavBtn.closest(".product-card");
+                const urun = karttanFavoriUrunOlustur(card);
+
+                if (urun) {
+                    favoriEkleCikar(urun);
+                }
+
+                return;
+            }
+
+            const wishlistBtn = e.target.closest(".wishlist-btn");
+
+            if (wishlistBtn) {
+                e.preventDefault();
+
+                const urun = detaydanFavoriUrunOlustur();
+
+                if (urun) {
+                    favoriEkleCikar(urun);
+                }
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            favoriSayaciniGuncelle();
+            favoriButonlariniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        ÖDEME YÖNTEMİ SEÇİMİ + KART FORMU
+        ========================================= */
+
+        const paymentOptions = document.querySelectorAll(".payment-option");
+        const cardPaymentForm = document.getElementById("cardPaymentForm");
+
+        function aktifOdemeYontemiGetir() {
+            const activePayment = document.querySelector(".payment-option.active");
+            return activePayment ? activePayment.dataset.payment : "bank";
+        }
+
+        function odemeYontemiSec(paymentType) {
+            paymentOptions.forEach((option) => {
+                option.classList.remove("active");
+            });
+
+            const selectedOption = document.querySelector(`.payment-option[data-payment="${paymentType}"]`);
+
+            if (selectedOption) {
+                selectedOption.classList.add("active");
+            }
+
+            if (cardPaymentForm) {
+                if (paymentType === "card") {
+                    cardPaymentForm.classList.add("active");
+                } else {
+                    cardPaymentForm.classList.remove("active");
+                }
+            }
+        }
+
+        paymentOptions.forEach((option) => {
+            option.addEventListener("click", function () {
+                odemeYontemiSec(this.dataset.payment);
+            });
+        });
+
+        /* =========================================
+        KART INPUT FORMATLAMA
+        ========================================= */
+
+        const cardNumberInput = document.getElementById("cardNumber");
+        const cardExpiryInput = document.getElementById("cardExpiry");
+        const cardCvvInput = document.getElementById("cardCvv");
+
+        if (cardNumberInput) {
+            cardNumberInput.addEventListener("input", function () {
+                let value = this.value.replace(/\D/g, "").slice(0, 16);
+
+                value = value.replace(/(\d{4})(?=\d)/g, "$1 ");
+
+                this.value = value;
+            });
+        }
+
+        if (cardExpiryInput) {
+            cardExpiryInput.addEventListener("input", function () {
+                let value = this.value.replace(/\D/g, "").slice(0, 4);
+
+                if (value.length >= 3) {
+                    value = value.slice(0, 2) + "/" + value.slice(2);
+                }
+
+                this.value = value;
+            });
+        }
+
+        if (cardCvvInput) {
+            cardCvvInput.addEventListener("input", function () {
+                this.value = this.value.replace(/\D/g, "").slice(0, 4);
+            });
+        }
+
+        /* =========================================
+        KART BİLGİLERİ KONTROLÜ
+        ========================================= */
+
+        function kartBilgileriGecerliMi() {
+            const cardHolder = document.getElementById("cardHolder")?.value.trim();
+            const cardNumber = document.getElementById("cardNumber")?.value.replace(/\s/g, "");
+            const cardExpiry = document.getElementById("cardExpiry")?.value.trim();
+            const cardCvv = document.getElementById("cardCvv")?.value.trim();
+
+            if (!cardHolder || !cardNumber || !cardExpiry || !cardCvv) {
+                return false;
+            }
+
+            if (cardNumber.length < 16) {
+                return false;
+            }
+
+            if (!/^\d{2}\/\d{2}$/.test(cardExpiry)) {
+                return false;
+            }
+
+            if (cardCvv.length < 3) {
+                return false;
+            }
+
+            return true;
+        }
+
+        /* =========================================
+        MEVCUT SİPARİŞ FORM KONTROLÜNÜ GENİŞLETİR
+        ========================================= */
+
+        function inputBosMu(id) {
+            const input = document.getElementById(id);
+
+            if (!input) {
+                return true;
+            }
+
+            return input.value.trim() === "";
+        }
+
+        function siparisFormunuKontrolEt() {
+            const zorunluAlanlar = [
+                "email",
+                "country",
+                "given-name",
+                "family-name",
+                "address-line1",
+                "district",
+                "city",
+                "postal-code",
+                "tel"
+            ];
+
+            const temelAlanlarDoluMu = zorunluAlanlar.every((id) => {
+                return !inputBosMu(id);
+            });
+
+            if (!temelAlanlarDoluMu) {
+                return false;
+            }
+
+            const aktifOdeme = aktifOdemeYontemiGetir();
+
+            if (aktifOdeme === "card") {
+                return kartBilgileriGecerliMi();
+            }
+
+            return true;
+        }
+    </script>
+
+    <script>
+        /* =========================================
+        GİRİŞ KONTROLÜ
+        ========================================= */
+
+        function aktifKullaniciVarMi() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            return aktifKullanici !== null;
+        }
+
+        function girisSayfasinaYonlendir() {
+            const mevcutSayfa = window.location.pathname.split("/").pop() || "index.html";
+            window.location.href = `giris.html?next=${mevcutSayfa}`;
+        }
+
+        function girisKontrolEt() {
+            if (!aktifKullaniciVarMi()) {
+                girisSayfasinaYonlendir();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+    <script src="modern-ui.js"></script>
+</body>
+
+</html>

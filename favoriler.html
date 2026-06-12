@@ -1,0 +1,652 @@
+﻿<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nekstAvilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-ui.css" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="site-container">
+            <div class="top-bar-inner d-flex align-items-center justify-content-end">
+                <a href="#" class="top-bar-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="site-container">
+            <nav class="navbar navbar-expand-xl p-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="nekstAvilla Logo" class="header-logo">
+                </a>
+
+                <div class="header-actions d-flex align-items-center">
+                    <div class="header-icons d-flex align-items-center">
+                        <a href="#" class="header-icon" aria-label="Ara"><i class="bi bi-search"></i></a>
+                        <a href="hesabim.html" class="header-icon" aria-label="Hesabım">
+                            <i class="bi bi-person"></i>
+                        </a> <a href="favoriler.html" class="header-icon position-relative" aria-label="Favoriler">
+                            <i class="bi bi-heart"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                        <a href="sepet.html" class="header-icon position-relative" aria-label="Sepet">
+                            <i class="bi bi-cart3"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Menüyü Aç/Kapat">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link" href="yeni-gelenler.html">Yeni Gelenler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ev & Yaşam</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kırtasiye</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aksesuar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Çanta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hediye Setleri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">İndirim</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pm-minik-banner">
+        <div class="banner-maske"></div> <img src="../images/backg.png" alt="nekstAvilla Yeni Gelenler"
+            class="banner-gorsel">
+
+        <div class="banner-icerik">
+            <h1>Favorilerim</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="index.html">Anasayfa</a> > <span>Favorilerim</span>
+    </div>
+
+    <section class="favorites-page">
+
+        <div class="site-container">
+
+            <div class="favorites-title-row">
+
+                <h2>
+                    Favorilerim
+                    <span id="favoritePageCount">(0)</span>
+                </h2>
+
+            </div>
+
+            <div id="favoritesContent"></div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-top">
+
+                <div class="footer-brand-area">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo2.png" alt="Eticaretiz Logo">
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Bizi Tanıyın!</h4>
+                        <a href="#">Hakkımızda</a>
+                        <a href="#">Blog</a>
+                        <a href="#">İletişim</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Müşteri Hizmetleri</h4>
+                        <a href="#">İade Politikası</a>
+                        <a href="#">Kargo Bilgileri</a>
+                        <a href="#">Sipariş Takibi</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Yardım</h4>
+                        <a href="#">Destek Merkezi ve SSS</a>
+                        <a href="#">Güvenlik Merkezi</a>
+                        <a href="#">Erişebilirlik</a>
+                    </div>
+
+                    <div class="footer-col footer-social-col">
+                        <h4>Sosyal Medya</h4>
+                        <div class="footer-socials">
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-cert-payments">
+                        <div class="footer-cert-block">
+                            <h4>Güvenlik Sertifikaları</h4>
+
+                            <div class="footer-logo-row footer-logo-row-security">
+                                <span class="footer-logo-chip chip-pci">
+                                    <img src="images/pci.png" alt="PCI DSS">
+                                </span>
+
+                                <span class="footer-logo-chip chip-visa-secure">
+                                    <img src="images/visa.png" alt="Visa Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-id">
+                                    <img src="images/ID.png" alt="ID Check">
+                                </span>
+
+                                <span class="footer-logo-chip chip-safe">
+                                    <img src="images/safe.png" alt="SafeKey">
+                                </span>
+
+                                <span class="footer-logo-chip chip-protect">
+                                    <img src="images/protect.png" alt="ProtectBuy">
+                                </span>
+
+                                <span class="footer-logo-chip chip-jcb-secure">
+                                    <img src="images/jcb.png" alt="JCB Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-apwg">
+                                    <img src="images/apwg.png" alt="APWG">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="footer-cert-block">
+                            <h4>Ödeme</h4>
+
+                            <div class="footer-logo-row footer-logo-row-payment-top">
+                                <span class="footer-logo-chip chip-visa2">
+                                    <img src="images/visa2.png" alt="Visa">
+                                </span>
+
+                                <span class="footer-logo-chip chip-master">
+                                    <img src="images/master.png" alt="Mastercard">
+                                </span>
+
+
+
+                                <span class="footer-logo-chip chip-disc">
+                                    <img src="images/disc.png" alt="Discover">
+                                </span>
+
+
+                                <span class="footer-logo-chip chip-cash">
+                                    <img src="images/cash.png" alt="Cash">
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 nekstAvilla</p>
+
+                    <div class="footer-bottom-links">
+                        <a href="#">Kullanım Şartları</a>
+                        <a href="#">Gizlilik Politikası</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /* =========================================
+        KULLANICIYA ÖZEL SEPET / FAVORİ SİSTEMİ
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function aktifKullaniciIdGetir() {
+            const aktifKullanici = aktifKullaniciGetir();
+            return aktifKullanici ? aktifKullanici.id : null;
+        }
+
+        function sepetKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `sepet_${userId}`;
+        }
+
+        function favorilerKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `favoriler_${userId}`;
+        }
+
+        function sepetiGetir() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(sepetKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function sepetiKaydet(sepet) {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.setItem(sepetKey, JSON.stringify(sepet));
+        }
+
+        function sepetiTemizle() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.removeItem(sepetKey);
+        }
+
+        function favorileriGetir() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(favorilerKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.setItem(favorilerKey, JSON.stringify(favoriler));
+        }
+
+        function favorileriTemizle() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.removeItem(favorilerKey);
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        FAVORİLER SAYFASI - FINAL
+        ========================================= */
+
+        function favorileriGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("favoriler")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            localStorage.setItem("favoriler", JSON.stringify(favoriler));
+        }
+
+        function sepetiGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("sepet")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function fiyatFormatla(fiyat) {
+            return Number(fiyat || 0).toLocaleString("tr-TR", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }) + " TL";
+        }
+
+        function sepetSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullanici) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+            const favoritePageCount = document.getElementById("favoritePageCount");
+
+            if (!aktifKullanici) {
+                if (favoriBadge) favoriBadge.innerText = "0";
+                if (favoritePageCount) favoritePageCount.innerText = "(0)";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            if (favoriBadge) {
+                favoriBadge.innerText = favoriler.length;
+            }
+
+            if (favoritePageCount) {
+                favoritePageCount.innerText = `(${favoriler.length})`;
+            }
+        }
+
+        function sepeteUrunEkle(urun) {
+            let sepet = sepetiGetir();
+
+            const yeniUrun = {
+                id: urun.id,
+                ad: urun.ad,
+                fiyat: Number(urun.fiyat || 0),
+                resim: urun.resim,
+                adet: 1,
+                toplam: Number(urun.fiyat || 0),
+                birim: urun.birim || "adet",
+                renk: urun.renk || "Standart"
+            };
+
+            const varolanUrunIndex = sepet.findIndex((item) => {
+                return item.id === yeniUrun.id;
+            });
+
+            if (varolanUrunIndex > -1) {
+                sepet[varolanUrunIndex].adet += 1;
+                sepet[varolanUrunIndex].toplam =
+                    sepet[varolanUrunIndex].adet * sepet[varolanUrunIndex].fiyat;
+            } else {
+                sepet.push(yeniUrun);
+            }
+
+            localStorage.setItem("sepet", JSON.stringify(sepet));
+
+            sepetSayaciniGuncelle();
+        }
+
+        function favoridenSil(id) {
+            let favoriler = favorileriGetir();
+
+            favoriler = favoriler.filter((urun) => {
+                return urun.id !== id;
+            });
+
+            favorileriKaydet(favoriler);
+
+            favorileriYukle();
+            favoriSayaciniGuncelle();
+        }
+
+        function favorileriYukle() {
+            const favoriler = favorileriGetir();
+            const favoritesContent = document.getElementById("favoritesContent");
+
+            if (!favoritesContent) return;
+
+            if (favoriler.length === 0) {
+                favoritesContent.innerHTML = `
+            <div class="empty-favorites">
+                <h2>FAVORİLERİNİZ ŞU ANDA BOŞ</h2>
+                <a href="yeni-gelenler.html">
+                    Ürünlere Göz Atın
+                </a>
+            </div>
+        `;
+
+                favoriSayaciniGuncelle();
+                return;
+            }
+
+            let html = `
+        <div class="favorites-grid">
+    `;
+
+            favoriler.forEach((urun) => {
+                html += `
+            <div class="favorite-card">
+
+                <div class="favorite-image">
+                    <img src="${urun.resim}" alt="${urun.ad}">
+                </div>
+
+                <div class="favorite-info">
+
+                    <span class="favorite-category">
+                        ${urun.kategori || "Ürün"}
+                    </span>
+
+                    <h3>
+                        ${urun.ad}
+                    </h3>
+
+                    <div class="favorite-price">
+                        ${fiyatFormatla(urun.fiyat)}
+                    </div>
+
+                    <div class="favorite-actions">
+
+                        <button 
+                            type="button" 
+                            class="favorite-add-cart" 
+                            data-id="${urun.id}"
+                        >
+                            Sepete Ekle
+                        </button>
+
+                        <button 
+                            type="button" 
+                            class="favorite-remove" 
+                            data-id="${urun.id}"
+                            aria-label="Favoriden Sil"
+                        >
+                            <i class="bi bi-trash"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+            });
+
+            html += `
+        </div>
+    `;
+
+            favoritesContent.innerHTML = html;
+
+            favoriSayaciniGuncelle();
+        }
+
+        document.addEventListener("click", function (e) {
+            const addCartBtn = e.target.closest(".favorite-add-cart");
+
+            if (addCartBtn) {
+
+                if (!girisKontrolEt()) return;
+
+                const id = addCartBtn.dataset.id;
+                const favoriler = favorileriGetir();
+                const urun = favoriler.find((item) => item.id === id);
+
+                if (!urun) return;
+
+                sepeteUrunEkle(urun);
+
+                const eskiText = addCartBtn.innerText;
+                addCartBtn.innerText = "Sepete Eklendi";
+
+                setTimeout(() => {
+                    addCartBtn.innerText = eskiText;
+                }, 1000);
+
+                return;
+            }
+
+            const removeBtn = e.target.closest(".favorite-remove");
+
+            if (removeBtn) {
+                const id = removeBtn.dataset.id;
+                favoridenSil(id);
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            if (!girisKontrolEt()) return;
+
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+            favorileriYukle();
+
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        GİRİŞ KONTROLÜ
+        ========================================= */
+
+        function aktifKullaniciVarMi() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            return aktifKullanici !== null;
+        }
+
+        function girisSayfasinaYonlendir() {
+            const mevcutSayfa = window.location.pathname.split("/").pop() || "index.html";
+            window.location.href = `giris.html?next=${mevcutSayfa}`;
+        }
+
+        function girisKontrolEt() {
+            if (!aktifKullaniciVarMi()) {
+                girisSayfasinaYonlendir();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+
+    <script src="modern-ui.js"></script>
+</body>
+
+</html>

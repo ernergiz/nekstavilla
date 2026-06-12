@@ -1,0 +1,1136 @@
+﻿<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nekstAvilla </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-ui.css" />
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="site-container">
+            <div class="top-bar-inner d-flex align-items-center justify-content-end">
+                <a href="#" class="top-bar-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="site-container">
+            <nav class="navbar navbar-expand-xl p-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="nekstAvilla Logo" class="header-logo">
+                </a>
+
+                <div class="header-actions d-flex align-items-center">
+                    <div class="header-icons d-flex align-items-center">
+                        <a href="#" class="header-icon" aria-label="Ara"><i class="bi bi-search"></i></a>
+
+                        <a href="hesabim.html" class="header-icon" aria-label="Hesabım">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <a href="favoriler.html" class="header-icon position-relative" aria-label="Favoriler">
+                            <i class="bi bi-heart"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+
+                        <a href="sepet.html" class="header-icon position-relative" aria-label="Sepet">
+                            <i class="bi bi-cart3"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Menüyü Aç/Kapat">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                                                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link" href="yeni-gelenler.html">Yeni Gelenler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ev & Yaşam</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kırtasiye</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aksesuar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Çanta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hediye Setleri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">İndirim</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pm-minik-banner">
+        <div class="banner-maske"></div>
+        <img src="images/backg.png" alt="nekstAvilla" class="banner-gorsel">
+
+        <div class="banner-icerik">
+            <h1 id="authBannerTitle">Kullanıcı Bilgilerim</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="index.html">Anasayfa</a> >
+        <span id="authBreadcrumbText">Kullanıcı Bilgilerim</span>
+    </div>
+
+    <section class="account-page">
+
+        <div class="site-container">
+
+            <div class="account-layout">
+
+                <!-- LEFT SIDEBAR -->
+                <aside class="account-sidebar">
+
+                    <div class="account-user-box">
+
+                        <div class="account-avatar" id="accountAvatar">
+                            PM
+                        </div>
+
+                        <div>
+                            <h3 id="sidebarUserName">
+                                Kullanıcı
+                            </h3>
+
+                            <p id="sidebarUserEmail">
+                                kullanici@mail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="account-menu">
+
+                        <a href="siparislerim.html" class="account-menu-item">
+                            <i class="bi bi-bag"></i>
+                            Siparişlerim
+                        </a>
+
+                        <a href="#" class="account-menu-item active">
+                            <i class="bi bi-person"></i>
+                            Kullanıcı Bilgilerim
+                        </a>
+
+                        <button type="button" class="account-menu-item logout-btn" id="logoutBtn">
+                            <i class="bi bi-box-arrow-left"></i>
+                            Çıkış Yap
+                        </button>
+
+                    </div>
+
+                </aside>
+
+                <!-- RIGHT CONTENT -->
+                <div class="account-content">
+
+                    <h2>Kullanıcı Bilgilerim</h2>
+
+                    <div class="account-section">
+
+                        <h3>Üyelik Bilgilerim</h3>
+
+                        <p class="account-desc">
+                            Birbirinden güvenilir ve en iyi seviyede tutabilmemiz için gereken
+                            bilgilerinizi buradan düzenleyebilirsiniz.
+                        </p>
+
+                        <div class="account-message" id="profileMessage"></div>
+
+                        <form id="profileForm">
+
+                            <div class="account-form-row">
+
+                                <div class="account-form-group">
+                                    <label>Ad</label>
+                                    <input type="text" id="profileName">
+                                </div>
+
+                                <div class="account-form-group">
+                                    <label>Soyad</label>
+                                    <input type="text" id="profileSurname">
+                                </div>
+
+                            </div>
+
+                            <div class="account-form-row">
+
+                                <div class="account-form-group">
+                                    <label>E-Posta Adresi</label>
+                                    <input type="email" id="profileEmail">
+                                </div>
+
+                                <div class="account-form-group phone-group">
+                                    <label>Telefon</label>
+
+                                    <div class="phone-input-wrap">
+                                        <input type="tel" id="profilePhone">
+
+                                        <button type="button" class="phone-change-btn">
+                                            Değiştir
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="account-save-btn">
+                                Kaydet
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="account-section password-section">
+
+                        <h3>Şifre Bilgilerim</h3>
+
+                        <p class="account-desc">
+                            Bilgileriniz bizimle her zaman güvende, yeni bir şifre belirlemek isterseniz
+                            buradan güncelleyebilirsiniz.
+                        </p>
+
+                        <div class="account-message" id="passwordMessage"></div>
+
+                        <form id="passwordForm">
+
+                            <div class="account-form-group full">
+
+                                <label>Mevcut Şifre</label>
+
+                                <div class="account-password-wrap">
+                                    <input type="password" id="currentPassword">
+
+                                    <button type="button" class="account-toggle-password" data-target="currentPassword">
+                                        <i class="bi bi-eye-slash"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="account-form-row">
+
+                                <div class="account-form-group">
+
+                                    <label>Yeni Şifre</label>
+
+                                    <div class="account-password-wrap">
+                                        <input type="password" id="newPassword">
+
+                                        <button type="button" class="account-toggle-password" data-target="newPassword">
+                                            <i class="bi bi-eye-slash"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="account-form-group">
+
+                                    <label>Yeni Şifre Tekrar</label>
+
+                                    <div class="account-password-wrap">
+                                        <input type="password" id="newPasswordAgain">
+
+                                        <button type="button" class="account-toggle-password"
+                                            data-target="newPasswordAgain">
+                                            <i class="bi bi-eye-slash"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="account-save-btn">
+                                Güncelle
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+   
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-top">
+
+                <div class="footer-brand-area">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo2.png" alt="Eticaretiz Logo">
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Bizi Tanıyın!</h4>
+                        <a href="#">Hakkımızda</a>
+                        <a href="#">Blog</a>
+                        <a href="#">İletişim</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Müşteri Hizmetleri</h4>
+                        <a href="#">İade Politikası</a>
+                        <a href="#">Kargo Bilgileri</a>
+                        <a href="#">Sipariş Takibi</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Yardım</h4>
+                        <a href="#">Destek Merkezi ve SSS</a>
+                        <a href="#">Güvenlik Merkezi</a>
+                        <a href="#">Erişebilirlik</a>
+                    </div>
+
+                    <div class="footer-col footer-social-col">
+                        <h4>Sosyal Medya</h4>
+                        <div class="footer-socials">
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-cert-payments">
+                        <div class="footer-cert-block">
+                            <h4>Güvenlik Sertifikaları</h4>
+
+                            <div class="footer-logo-row footer-logo-row-security">
+                                <span class="footer-logo-chip chip-pci">
+                                    <img src="images/pci.png" alt="PCI DSS">
+                                </span>
+
+                                <span class="footer-logo-chip chip-visa-secure">
+                                    <img src="images/visa.png" alt="Visa Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-id">
+                                    <img src="images/ID.png" alt="ID Check">
+                                </span>
+
+                                <span class="footer-logo-chip chip-safe">
+                                    <img src="images/safe.png" alt="SafeKey">
+                                </span>
+
+                                <span class="footer-logo-chip chip-protect">
+                                    <img src="images/protect.png" alt="ProtectBuy">
+                                </span>
+
+                                <span class="footer-logo-chip chip-jcb-secure">
+                                    <img src="images/jcb.png" alt="JCB Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-apwg">
+                                    <img src="images/apwg.png" alt="APWG">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="footer-cert-block">
+                            <h4>Ödeme</h4>
+
+                            <div class="footer-logo-row footer-logo-row-payment-top">
+                                <span class="footer-logo-chip chip-visa2">
+                                    <img src="images/visa2.png" alt="Visa">
+                                </span>
+
+                                <span class="footer-logo-chip chip-master">
+                                    <img src="images/master.png" alt="Mastercard">
+                                </span>
+
+
+
+                                <span class="footer-logo-chip chip-disc">
+                                    <img src="images/disc.png" alt="Discover">
+                                </span>
+
+
+                                <span class="footer-logo-chip chip-cash">
+                                    <img src="images/cash.png" alt="Cash">
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 nekstAvilla</p>
+
+                    <div class="footer-bottom-links">
+                        <a href="#">Kullanım Şartları</a>
+                        <a href="#">Gizlilik Politikası</a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /* =========================================
+        KULLANICIYA ÖZEL SEPET / FAVORİ SİSTEMİ
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function aktifKullaniciIdGetir() {
+            const aktifKullanici = aktifKullaniciGetir();
+            return aktifKullanici ? aktifKullanici.id : null;
+        }
+
+        function sepetKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `sepet_${userId}`;
+        }
+
+        function favorilerKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `favoriler_${userId}`;
+        }
+
+        function sepetiGetir() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(sepetKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function sepetiKaydet(sepet) {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.setItem(sepetKey, JSON.stringify(sepet));
+        }
+
+        function sepetiTemizle() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.removeItem(sepetKey);
+        }
+
+        function favorileriGetir() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(favorilerKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.setItem(favorilerKey, JSON.stringify(favoriler));
+        }
+
+        function favorileriTemizle() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.removeItem(favorilerKey);
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        AUTH PAGE
+        ========================================= */
+
+        const loginTab = document.getElementById("loginTab");
+        const registerTab = document.getElementById("registerTab");
+
+        const loginForm = document.getElementById("loginForm");
+        const registerForm = document.getElementById("registerForm");
+
+        const authBannerTitle = document.getElementById("authBannerTitle");
+        const authBreadcrumbText = document.getElementById("authBreadcrumbText");
+        const authMessage = document.getElementById("authMessage");
+
+        const registerPhone = document.getElementById("registerPhone");
+
+        function kullanicilariGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("kullanicilar")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function kullanicilariKaydet(kullanicilar) {
+            localStorage.setItem("kullanicilar", JSON.stringify(kullanicilar));
+        }
+
+        function adminKullaniciyiEkle() {
+            const kullanicilar = kullanicilariGetir();
+
+            const adminVarMi = kullanicilar.some((user) => {
+                return user.email === "admin@nekstavilla.com";
+            });
+
+            if (!adminVarMi) {
+                kullanicilar.push({
+                    id: "admin",
+                    ad: "Admin",
+                    soyad: "User",
+                    email: "admin@nekstavilla.com",
+                    telefon: "0000000000",
+                    sifre: "123qwe",
+                    rol: "admin"
+                });
+
+                kullanicilariKaydet(kullanicilar);
+            }
+        }
+
+        function mesajGoster(type, text) {
+            authMessage.className = "auth-message active " + type;
+            authMessage.innerText = text;
+        }
+
+        function mesajTemizle() {
+            authMessage.className = "auth-message";
+            authMessage.innerText = "";
+        }
+
+        function authModeDegistir(mode) {
+            mesajTemizle();
+
+            if (mode === "login") {
+                loginTab.classList.add("active");
+                registerTab.classList.remove("active");
+
+                loginForm.classList.add("active");
+                registerForm.classList.remove("active");
+
+                authBannerTitle.innerText = "Giriş Yap";
+                authBreadcrumbText.innerText = "Giriş Yap";
+
+                document.title = "nekstAvilla | Giriş Yap";
+            }
+
+            if (mode === "register") {
+                registerTab.classList.add("active");
+                loginTab.classList.remove("active");
+
+                registerForm.classList.add("active");
+                loginForm.classList.remove("active");
+
+                authBannerTitle.innerText = "Kayıt Ol";
+                authBreadcrumbText.innerText = "Kayıt Ol";
+
+                document.title = "nekstAvilla | Kayıt Ol";
+            }
+        }
+
+        loginTab.addEventListener("click", () => {
+            authModeDegistir("login");
+        });
+
+        registerTab.addEventListener("click", () => {
+            authModeDegistir("register");
+        });
+
+        document.querySelectorAll(".toggle-password").forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const targetId = this.dataset.target;
+                const input = document.getElementById(targetId);
+                const icon = this.querySelector("i");
+
+                if (!input) return;
+
+                if (input.type === "password") {
+                    input.type = "text";
+                    icon.className = "bi bi-eye";
+                } else {
+                    input.type = "password";
+                    icon.className = "bi bi-eye-slash";
+                }
+            });
+        });
+
+        registerPhone.addEventListener("input", function () {
+            this.value = this.value.replace(/[^\d\s()]/g, "");
+        });
+
+        registerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const ad = document.getElementById("registerName").value.trim();
+            const soyad = document.getElementById("registerSurname").value.trim();
+            const email = document.getElementById("registerEmail").value.trim().toLowerCase();
+            const telefon = document.getElementById("registerPhone").value.trim();
+            const sifre = document.getElementById("registerPassword").value.trim();
+            const policy = document.getElementById("registerPolicy").checked;
+
+            if (!ad || !soyad || !email || !telefon || !sifre) {
+                mesajGoster("error", "Lütfen bütün alanları eksiksiz doldurun.");
+                return;
+            }
+
+            if (sifre.length < 6) {
+                mesajGoster("error", "Şifre en az 6 karakter olmalıdır.");
+                return;
+            }
+
+            if (!policy) {
+                mesajGoster("error", "Devam etmek için üyelik koşullarını kabul etmelisiniz.");
+                return;
+            }
+
+            const kullanicilar = kullanicilariGetir();
+
+            const emailVarMi = kullanicilar.some((user) => {
+                return user.email === email;
+            });
+
+            if (emailVarMi) {
+                mesajGoster("error", "Bu e-posta adresiyle kayıtlı bir kullanıcı zaten var.");
+                return;
+            }
+
+            const yeniKullanici = {
+                id: "user-" + Date.now(),
+                ad: ad,
+                soyad: soyad,
+                email: email,
+                telefon: telefon,
+                sifre: sifre,
+                rol: "user"
+            };
+
+            kullanicilar.push(yeniKullanici);
+            kullanicilariKaydet(kullanicilar);
+
+            mesajGoster("success", "Kayıt başarılı. Şimdi giriş yapabilirsiniz.");
+
+            registerForm.reset();
+
+            setTimeout(() => {
+                authModeDegistir("login");
+                document.getElementById("loginEmail").value = email;
+            }, 900);
+        });
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("loginEmail").value.trim().toLowerCase();
+            const sifre = document.getElementById("loginPassword").value.trim();
+
+            if (!email || !sifre) {
+                mesajGoster("error", "E-posta ve şifre alanlarını doldurun.");
+                return;
+            }
+
+            const kullanicilar = kullanicilariGetir();
+
+            const bulunanKullanici = kullanicilar.find((user) => {
+                return user.email === email && user.sifre === sifre;
+            });
+
+            if (!bulunanKullanici) {
+                mesajGoster("error", "E-posta veya şifre hatalı.");
+                return;
+            }
+
+            localStorage.setItem("aktifKullanici", JSON.stringify({
+                id: bulunanKullanici.id,
+                ad: bulunanKullanici.ad,
+                soyad: bulunanKullanici.soyad,
+                email: bulunanKullanici.email,
+                rol: bulunanKullanici.rol
+            }));
+
+            mesajGoster("success", "Giriş başarılı. Yönlendiriliyorsunuz...");
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 900);
+        });
+
+        function sepetSayaciniGuncelle() {
+            const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (sepetBadge) {
+                sepetBadge.innerText = toplamAdet;
+            }
+        }
+
+        function favoriSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullanici) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            adminKullaniciyiEkle();
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+
+            const params = new URLSearchParams(window.location.search);
+            const mode = params.get("mode");
+
+            if (mode === "register") {
+                authModeDegistir("register");
+            } else {
+                authModeDegistir("login");
+            }
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        HESABIM SAYFASI
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function kullanicilariGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("kullanicilar")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function kullanicilariKaydet(kullanicilar) {
+            localStorage.setItem("kullanicilar", JSON.stringify(kullanicilar));
+        }
+
+        function mesajGoster(elementId, type, text) {
+            const message = document.getElementById(elementId);
+
+            if (!message) return;
+
+            message.className = "account-message active " + type;
+            message.innerText = text;
+        }
+
+        function mesajTemizle(elementId) {
+            const message = document.getElementById(elementId);
+
+            if (!message) return;
+
+            message.className = "account-message";
+            message.innerText = "";
+        }
+
+        function sepetSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullanici) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullanici) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        function kullaniciBilgileriniYukle() {
+            const aktifKullanici = aktifKullaniciGetir();
+
+            if (!aktifKullanici) {
+                window.location.href = "giris.html";
+                return;
+            }
+
+            const kullanicilar = kullanicilariGetir();
+
+            const tamKullanici = kullanicilar.find((user) => {
+                return user.id === aktifKullanici.id;
+            });
+
+            if (!tamKullanici) {
+                localStorage.removeItem("aktifKullanici");
+                window.location.href = "giris.html";
+                return;
+            }
+
+            const adSoyad = `${tamKullanici.ad} ${tamKullanici.soyad}`;
+            const initials = `${tamKullanici.ad?.charAt(0) || ""}${tamKullanici.soyad?.charAt(0) || ""}`.toUpperCase();
+
+            document.getElementById("accountAvatar").innerText = initials || "PM";
+            document.getElementById("sidebarUserName").innerText = adSoyad;
+            document.getElementById("sidebarUserEmail").innerText = tamKullanici.email;
+
+            document.getElementById("profileName").value = tamKullanici.ad || "";
+            document.getElementById("profileSurname").value = tamKullanici.soyad || "";
+            document.getElementById("profileEmail").value = tamKullanici.email || "";
+            document.getElementById("profilePhone").value = tamKullanici.telefon || "";
+        }
+
+        const profileForm = document.getElementById("profileForm");
+
+        if (profileForm) {
+            profileForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                mesajTemizle("profileMessage");
+
+                const aktifKullanici = aktifKullaniciGetir();
+
+                if (!aktifKullanici) {
+                    window.location.href = "giris.html";
+                    return;
+                }
+
+                const ad = document.getElementById("profileName").value.trim();
+                const soyad = document.getElementById("profileSurname").value.trim();
+                const email = document.getElementById("profileEmail").value.trim().toLowerCase();
+                const telefon = document.getElementById("profilePhone").value.trim();
+
+                if (!ad || !soyad || !email || !telefon) {
+                    mesajGoster("profileMessage", "error", "Lütfen bütün üyelik bilgilerini doldurun.");
+                    return;
+                }
+
+                let kullanicilar = kullanicilariGetir();
+
+                const emailBaskasindaVarMi = kullanicilar.some((user) => {
+                    return user.email === email && user.id !== aktifKullanici.id;
+                });
+
+                if (emailBaskasindaVarMi) {
+                    mesajGoster("profileMessage", "error", "Bu e-posta başka bir kullanıcı tarafından kullanılıyor.");
+                    return;
+                }
+
+                kullanicilar = kullanicilar.map((user) => {
+                    if (user.id === aktifKullanici.id) {
+                        return {
+                            ...user,
+                            ad: ad,
+                            soyad: soyad,
+                            email: email,
+                            telefon: telefon
+                        };
+                    }
+
+                    return user;
+                });
+
+                kullanicilariKaydet(kullanicilar);
+
+                const yeniAktifKullanici = {
+                    ...aktifKullanici,
+                    ad: ad,
+                    soyad: soyad,
+                    email: email
+                };
+
+                localStorage.setItem("aktifKullanici", JSON.stringify(yeniAktifKullanici));
+
+                kullaniciBilgileriniYukle();
+
+                mesajGoster("profileMessage", "success", "Bilgileriniz başarıyla güncellendi.");
+            });
+        }
+
+        const passwordForm = document.getElementById("passwordForm");
+
+        if (passwordForm) {
+            passwordForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                mesajTemizle("passwordMessage");
+
+                const aktifKullanici = aktifKullaniciGetir();
+
+                if (!aktifKullanici) {
+                    window.location.href = "giris.html";
+                    return;
+                }
+
+                const mevcutSifre = document.getElementById("currentPassword").value.trim();
+                const yeniSifre = document.getElementById("newPassword").value.trim();
+                const yeniSifreTekrar = document.getElementById("newPasswordAgain").value.trim();
+
+                if (!mevcutSifre || !yeniSifre || !yeniSifreTekrar) {
+                    mesajGoster("passwordMessage", "error", "Lütfen tüm şifre alanlarını doldurun.");
+                    return;
+                }
+
+                if (yeniSifre.length < 6) {
+                    mesajGoster("passwordMessage", "error", "Yeni şifre en az 6 karakter olmalıdır.");
+                    return;
+                }
+
+                if (yeniSifre !== yeniSifreTekrar) {
+                    mesajGoster("passwordMessage", "error", "Yeni şifreler birbiriyle eşleşmiyor.");
+                    return;
+                }
+
+                let kullanicilar = kullanicilariGetir();
+
+                const kullaniciIndex = kullanicilar.findIndex((user) => {
+                    return user.id === aktifKullanici.id;
+                });
+
+                if (kullaniciIndex === -1) {
+                    localStorage.removeItem("aktifKullanici");
+                    window.location.href = "giris.html";
+                    return;
+                }
+
+                if (kullanicilar[kullaniciIndex].sifre !== mevcutSifre) {
+                    mesajGoster("passwordMessage", "error", "Mevcut şifre hatalı.");
+                    return;
+                }
+
+                kullanicilar[kullaniciIndex].sifre = yeniSifre;
+
+                kullanicilariKaydet(kullanicilar);
+
+                passwordForm.reset();
+
+                mesajGoster("passwordMessage", "success", "Şifreniz başarıyla güncellendi.");
+            });
+        }
+
+        document.querySelectorAll(".account-toggle-password").forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const targetId = this.dataset.target;
+                const input = document.getElementById(targetId);
+                const icon = this.querySelector("i");
+
+                if (!input) return;
+
+                if (input.type === "password") {
+                    input.type = "text";
+                    icon.className = "bi bi-eye";
+                } else {
+                    input.type = "password";
+                    icon.className = "bi bi-eye-slash";
+                }
+            });
+        });
+
+        const logoutBtn = document.getElementById("logoutBtn");
+
+        if (logoutBtn) {
+            logoutBtn.addEventListener("click", function () {
+
+                localStorage.removeItem("aktifKullanici");
+
+                const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+                const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+                if (sepetBadge) {
+                    sepetBadge.innerText = "0";
+                }
+
+                if (favoriBadge) {
+                    favoriBadge.innerText = "0";
+                }
+
+                window.location.href = "giris.html";
+
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            kullaniciBilgileriniYukle();
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        GİRİŞ KONTROLÜ
+        ========================================= */
+
+        function aktifKullaniciVarMi() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            return aktifKullanici !== null;
+        }
+
+        function girisSayfasinaYonlendir() {
+            const mevcutSayfa = window.location.pathname.split("/").pop() || "index.html";
+            window.location.href = `giris.html?next=${mevcutSayfa}`;
+        }
+
+        function girisKontrolEt() {
+            if (!aktifKullaniciVarMi()) {
+                girisSayfasinaYonlendir();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+    <script src="modern-ui.js"></script>
+</body>
+
+</html>
+
+
+

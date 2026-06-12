@@ -1,0 +1,810 @@
+﻿<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nekstAvilla | Giriş Yap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern-ui.css" />
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="site-container">
+            <div class="top-bar-inner d-flex align-items-center justify-content-end">
+                <a href="#" class="top-bar-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="top-bar-icon" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="site-container">
+            <nav class="navbar navbar-expand-xl p-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="nekstAvilla Logo" class="header-logo">
+                </a>
+
+                <div class="header-actions d-flex align-items-center">
+                    <div class="header-icons d-flex align-items-center">
+                        <a href="#" class="header-icon" aria-label="Ara"><i class="bi bi-search"></i></a>
+
+                        <a href="hesabim.html" class="header-icon" aria-label="Hesabım">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <a href="favoriler.html" class="header-icon position-relative" aria-label="Favoriler">
+                            <i class="bi bi-heart"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+
+                        <a href="sepet.html" class="header-icon position-relative" aria-label="Sepet">
+                            <i class="bi bi-cart3"></i>
+                            <span class="icon-badge">0</span>
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Menüyü Aç/Kapat">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                                                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link" href="yeni-gelenler.html">Yeni Gelenler</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Ev & Yaşam</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Kırtasiye</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aksesuar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Çanta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hediye Setleri</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">İndirim</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pm-minik-banner">
+        <div class="banner-maske"></div>
+        <img src="images/backg.png" alt="nekstAvilla" class="banner-gorsel">
+
+        <div class="banner-icerik">
+            <h1 id="authBannerTitle">Giriş Yap</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="index.html">Anasayfa</a> >
+        <span id="authBreadcrumbText">Giriş Yap</span>
+    </div>
+
+    <section class="auth-page">
+
+        <div class="site-container">
+
+            <div class="auth-layout">
+
+                <!-- LEFT -->
+                <div class="auth-left">
+
+                    <h2>Merhaba.</h2>
+
+                    <p class="auth-desc">
+                        Lorem ipsum dolor sit amet consectetur. Ac nunc elit et velit a massa et lobortis.
+                        Purus venenatis id vitae.
+                    </p>
+
+                    <div class="auth-tabs">
+
+                        <button type="button" class="auth-tab active" id="loginTab">
+                            Giriş Yap
+                        </button>
+
+                        <button type="button" class="auth-tab" id="registerTab">
+                            Kayıt Ol
+                        </button>
+
+                    </div>
+
+                    <div class="auth-message" id="authMessage"></div>
+
+                    <!-- LOGIN FORM -->
+                    <form class="auth-form active" id="loginForm">
+
+                        <div class="auth-group">
+                            <label>E-Posta</label>
+                            <input type="email" id="loginEmail" placeholder="E-Posta">
+                        </div>
+
+                        <div class="auth-group">
+                            <label>Şifre</label>
+
+                            <div class="auth-password">
+                                <input type="password" id="loginPassword" placeholder="Şifre">
+                                <button type="button" class="toggle-password" data-target="loginPassword">
+                                    <i class="bi bi-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="auth-row-small">
+                            <label class="auth-check">
+                                <input type="checkbox" id="rememberMe">
+                                <span>Beni Hatırla</span>
+                            </label>
+
+                            <a href="#" class="forgot-link">Şifremi Unuttum</a>
+                        </div>
+
+                        <button type="submit" class="auth-main-btn">
+                            Giriş Yap
+                        </button>
+
+                    </form>
+
+                    <!-- REGISTER FORM -->
+                    <form class="auth-form" id="registerForm">
+
+                        <div class="auth-name-row">
+
+                            <div class="auth-group">
+                                <label>Ad</label>
+                                <input type="text" id="registerName" placeholder="Adınız">
+                            </div>
+
+                            <div class="auth-group">
+                                <label>Soyad</label>
+                                <input type="text" id="registerSurname" placeholder="Soyadınız">
+                            </div>
+
+                        </div>
+
+                        <div class="auth-group">
+                            <label>E-Posta</label>
+                            <input type="email" id="registerEmail" placeholder="E-Posta">
+                        </div>
+
+                        <div class="auth-group">
+                            <label>Telefon Numarası</label>
+                            <input type="tel" id="registerPhone" placeholder="0 (53_) ___ __ __">
+                        </div>
+
+                        <div class="auth-group">
+                            <label>Şifre</label>
+
+                            <div class="auth-password">
+                                <input type="password" id="registerPassword" placeholder="Şifre">
+                                <button type="button" class="toggle-password" data-target="registerPassword">
+                                    <i class="bi bi-eye-slash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <label class="auth-policy">
+                            <input type="checkbox" id="registerPolicy">
+
+                            <span>
+                                Kişisel verileriniz, Aydınlatma Metni kapsamında işlenmektedir.
+                                “Üye Ol” veya “Sosyal Hesap” butonlarından birine basarak
+                                <strong>Üyelik Sözleşmesi</strong>, <strong>Rıza Metni</strong>,
+                                <strong>Çerez Politikası</strong> okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.
+                            </span>
+                        </label>
+
+                        <button type="submit" class="auth-main-btn">
+                            Üye Ol
+                        </button>
+
+                    </form>
+
+                    <div class="auth-or">
+                        veya
+                    </div>
+
+                    <div class="social-login-box">
+
+                        <h3>Sosyal hesap ile giriş yap</h3>
+
+                        <p>
+                            Şifresiz giriş yapabilmek için Google, Apple veya Facebook hesabınızı bağlayabilirsiniz.
+                        </p>
+
+                        <div class="social-login-row">
+
+                            <button type="button" class="social-login-btn">
+                                <i class="bi bi-google"></i>
+                                Google
+                            </button>
+
+                            <button type="button" class="social-login-btn">
+                                <i class="bi bi-facebook"></i>
+                                Facebook
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="auth-right">
+                    <img src="images/personelgk.png" alt="nekstAvilla">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div class="site-footer-top">
+
+                <div class="footer-brand-area">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo2.png" alt="Eticaretiz Logo">
+                    </a>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Bizi Tanıyın!</h4>
+                        <a href="#">Hakkımızda</a>
+                        <a href="#">Blog</a>
+                        <a href="#">İletişim</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Müşteri Hizmetleri</h4>
+                        <a href="#">İade Politikası</a>
+                        <a href="#">Kargo Bilgileri</a>
+                        <a href="#">Sipariş Takibi</a>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Yardım</h4>
+                        <a href="#">Destek Merkezi ve SSS</a>
+                        <a href="#">Güvenlik Merkezi</a>
+                        <a href="#">Erişebilirlik</a>
+                    </div>
+
+                    <div class="footer-col footer-social-col">
+                        <h4>Sosyal Medya</h4>
+                        <div class="footer-socials">
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-cert-payments">
+                        <div class="footer-cert-block">
+                            <h4>Güvenlik Sertifikaları</h4>
+
+                            <div class="footer-logo-row footer-logo-row-security">
+                                <span class="footer-logo-chip chip-pci">
+                                    <img src="images/pci.png" alt="PCI DSS">
+                                </span>
+
+                                <span class="footer-logo-chip chip-visa-secure">
+                                    <img src="images/visa.png" alt="Visa Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-id">
+                                    <img src="images/ID.png" alt="ID Check">
+                                </span>
+
+                                <span class="footer-logo-chip chip-safe">
+                                    <img src="images/safe.png" alt="SafeKey">
+                                </span>
+
+                                <span class="footer-logo-chip chip-protect">
+                                    <img src="images/protect.png" alt="ProtectBuy">
+                                </span>
+
+                                <span class="footer-logo-chip chip-jcb-secure">
+                                    <img src="images/jcb.png" alt="JCB Secure">
+                                </span>
+
+                                <span class="footer-logo-chip chip-apwg">
+                                    <img src="images/apwg.png" alt="APWG">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="footer-cert-block">
+                            <h4>Ödeme</h4>
+
+                            <div class="footer-logo-row footer-logo-row-payment-top">
+                                <span class="footer-logo-chip chip-visa2">
+                                    <img src="images/visa2.png" alt="Visa">
+                                </span>
+
+                                <span class="footer-logo-chip chip-master">
+                                    <img src="images/master.png" alt="Mastercard">
+                                </span>
+
+
+
+                                <span class="footer-logo-chip chip-disc">
+                                    <img src="images/disc.png" alt="Discover">
+                                </span>
+
+
+                                <span class="footer-logo-chip chip-cash">
+                                    <img src="images/cash.png" alt="Cash">
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2026 nekstAvilla</p>
+
+                    <div class="footer-bottom-links">
+                        <a href="#">Kullanım Şartları</a>
+                        <a href="#">Gizlilik Politikası</a>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        /* =========================================
+        KULLANICIYA ÖZEL SEPET / FAVORİ SİSTEMİ
+        ========================================= */
+
+        function aktifKullaniciGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+            } catch {
+                return null;
+            }
+        }
+
+        function aktifKullaniciIdGetir() {
+            const aktifKullanici = aktifKullaniciGetir();
+            return aktifKullanici ? aktifKullanici.id : null;
+        }
+
+        function sepetKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `sepet_${userId}`;
+        }
+
+        function favorilerKeyGetir() {
+            const userId = aktifKullaniciIdGetir();
+
+            if (!userId) {
+                return null;
+            }
+
+            return `favoriler_${userId}`;
+        }
+
+        function sepetiGetir() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(sepetKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function sepetiKaydet(sepet) {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.setItem(sepetKey, JSON.stringify(sepet));
+        }
+
+        function sepetiTemizle() {
+            const sepetKey = sepetKeyGetir();
+
+            if (!sepetKey) {
+                return;
+            }
+
+            localStorage.removeItem(sepetKey);
+        }
+
+        function favorileriGetir() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return [];
+            }
+
+            try {
+                return JSON.parse(localStorage.getItem(favorilerKey)) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function favorileriKaydet(favoriler) {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.setItem(favorilerKey, JSON.stringify(favoriler));
+        }
+
+        function favorileriTemizle() {
+            const favorilerKey = favorilerKeyGetir();
+
+            if (!favorilerKey) {
+                return;
+            }
+
+            localStorage.removeItem(favorilerKey);
+        }
+
+        function sepetSayaciniGuncelle() {
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = sepetiGetir();
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullaniciIdGetir()) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = favorileriGetir();
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+        });
+    </script>
+
+    <script>
+        /* =========================================
+        AUTH PAGE
+        ========================================= */
+
+        const loginTab = document.getElementById("loginTab");
+        const registerTab = document.getElementById("registerTab");
+
+        const loginForm = document.getElementById("loginForm");
+        const registerForm = document.getElementById("registerForm");
+
+        const authBannerTitle = document.getElementById("authBannerTitle");
+        const authBreadcrumbText = document.getElementById("authBreadcrumbText");
+        const authMessage = document.getElementById("authMessage");
+
+        const registerPhone = document.getElementById("registerPhone");
+
+        function kullanicilariGetir() {
+            try {
+                return JSON.parse(localStorage.getItem("kullanicilar")) || [];
+            } catch {
+                return [];
+            }
+        }
+
+        function kullanicilariKaydet(kullanicilar) {
+            localStorage.setItem("kullanicilar", JSON.stringify(kullanicilar));
+        }
+
+        function adminKullaniciyiEkle() {
+            const kullanicilar = kullanicilariGetir();
+
+            const adminVarMi = kullanicilar.some((user) => {
+                return user.email === "admin@nekstavilla.com";
+            });
+
+            if (!adminVarMi) {
+                kullanicilar.push({
+                    id: "admin",
+                    ad: "Admin",
+                    soyad: "User",
+                    email: "admin@nekstavilla.com",
+                    telefon: "0000000000",
+                    sifre: "123qwe",
+                    rol: "admin"
+                });
+
+                kullanicilariKaydet(kullanicilar);
+            }
+        }
+
+        function mesajGoster(type, text) {
+            authMessage.className = "auth-message active " + type;
+            authMessage.innerText = text;
+        }
+
+        function mesajTemizle() {
+            authMessage.className = "auth-message";
+            authMessage.innerText = "";
+        }
+
+        function authModeDegistir(mode) {
+            mesajTemizle();
+
+            if (mode === "login") {
+                loginTab.classList.add("active");
+                registerTab.classList.remove("active");
+
+                loginForm.classList.add("active");
+                registerForm.classList.remove("active");
+
+                authBannerTitle.innerText = "Giriş Yap";
+                authBreadcrumbText.innerText = "Giriş Yap";
+
+                document.title = "nekstAvilla | Giriş Yap";
+            }
+
+            if (mode === "register") {
+                registerTab.classList.add("active");
+                loginTab.classList.remove("active");
+
+                registerForm.classList.add("active");
+                loginForm.classList.remove("active");
+
+                authBannerTitle.innerText = "Kayıt Ol";
+                authBreadcrumbText.innerText = "Kayıt Ol";
+
+                document.title = "nekstAvilla | Kayıt Ol";
+            }
+        }
+
+        loginTab.addEventListener("click", () => {
+            authModeDegistir("login");
+        });
+
+        registerTab.addEventListener("click", () => {
+            authModeDegistir("register");
+        });
+
+        document.querySelectorAll(".toggle-password").forEach((btn) => {
+            btn.addEventListener("click", function () {
+                const targetId = this.dataset.target;
+                const input = document.getElementById(targetId);
+                const icon = this.querySelector("i");
+
+                if (!input) return;
+
+                if (input.type === "password") {
+                    input.type = "text";
+                    icon.className = "bi bi-eye";
+                } else {
+                    input.type = "password";
+                    icon.className = "bi bi-eye-slash";
+                }
+            });
+        });
+
+        registerPhone.addEventListener("input", function () {
+            this.value = this.value.replace(/[^\d\s()]/g, "");
+        });
+
+        registerForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const ad = document.getElementById("registerName").value.trim();
+            const soyad = document.getElementById("registerSurname").value.trim();
+            const email = document.getElementById("registerEmail").value.trim().toLowerCase();
+            const telefon = document.getElementById("registerPhone").value.trim();
+            const sifre = document.getElementById("registerPassword").value.trim();
+            const policy = document.getElementById("registerPolicy").checked;
+
+            if (!ad || !soyad || !email || !telefon || !sifre) {
+                mesajGoster("error", "Lütfen bütün alanları eksiksiz doldurun.");
+                return;
+            }
+
+            if (sifre.length < 6) {
+                mesajGoster("error", "Şifre en az 6 karakter olmalıdır.");
+                return;
+            }
+
+            if (!policy) {
+                mesajGoster("error", "Devam etmek için üyelik koşullarını kabul etmelisiniz.");
+                return;
+            }
+
+            const kullanicilar = kullanicilariGetir();
+
+            const emailVarMi = kullanicilar.some((user) => {
+                return user.email === email;
+            });
+
+            if (emailVarMi) {
+                mesajGoster("error", "Bu e-posta adresiyle kayıtlı bir kullanıcı zaten var.");
+                return;
+            }
+
+            const yeniKullanici = {
+                id: "user-" + Date.now(),
+                ad: ad,
+                soyad: soyad,
+                email: email,
+                telefon: telefon,
+                sifre: sifre,
+                rol: "user"
+            };
+
+            kullanicilar.push(yeniKullanici);
+            kullanicilariKaydet(kullanicilar);
+
+            mesajGoster("success", "Kayıt başarılı. Şimdi giriş yapabilirsiniz.");
+
+            registerForm.reset();
+
+            setTimeout(() => {
+                authModeDegistir("login");
+                document.getElementById("loginEmail").value = email;
+            }, 900);
+        });
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("loginEmail").value.trim().toLowerCase();
+            const sifre = document.getElementById("loginPassword").value.trim();
+
+            if (!email || !sifre) {
+                mesajGoster("error", "E-posta ve şifre alanlarını doldurun.");
+                return;
+            }
+
+            const kullanicilar = kullanicilariGetir();
+
+            const bulunanKullanici = kullanicilar.find((user) => {
+                return user.email === email && user.sifre === sifre;
+            });
+
+            if (!bulunanKullanici) {
+                mesajGoster("error", "E-posta veya şifre hatalı.");
+                return;
+            }
+
+            localStorage.setItem("aktifKullanici", JSON.stringify({
+                id: bulunanKullanici.id,
+                ad: bulunanKullanici.ad,
+                soyad: bulunanKullanici.soyad,
+                email: bulunanKullanici.email,
+                rol: bulunanKullanici.rol
+            }));
+
+            mesajGoster("success", "Giriş başarılı. Yönlendiriliyorsunuz...");
+
+            setTimeout(() => {
+                const params = new URLSearchParams(window.location.search);
+                const nextPage = params.get("next");
+
+                if (nextPage) {
+                    window.location.href = nextPage;
+                } else {
+                    window.location.href = "index.html";
+                }
+            }, 900);
+        });
+
+        function sepetSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const sepetBadge = document.querySelector('a[href="sepet.html"] .icon-badge');
+
+            if (!sepetBadge) return;
+
+            if (!aktifKullanici) {
+                sepetBadge.innerText = "0";
+                return;
+            }
+
+            const sepet = JSON.parse(localStorage.getItem("sepet")) || [];
+
+            const toplamAdet = sepet.reduce((total, urun) => {
+                return total + Number(urun.adet || 0);
+            }, 0);
+
+            sepetBadge.innerText = toplamAdet;
+        }
+
+        function favoriSayaciniGuncelle() {
+            const aktifKullanici = JSON.parse(localStorage.getItem("aktifKullanici")) || null;
+
+            const favoriBadge = document.querySelector('a[href="favoriler.html"] .icon-badge');
+
+            if (!favoriBadge) return;
+
+            if (!aktifKullanici) {
+                favoriBadge.innerText = "0";
+                return;
+            }
+
+            const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+
+            favoriBadge.innerText = favoriler.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            adminKullaniciyiEkle();
+            sepetSayaciniGuncelle();
+            favoriSayaciniGuncelle();
+
+            const params = new URLSearchParams(window.location.search);
+            const mode = params.get("mode");
+
+            if (mode === "register") {
+                authModeDegistir("register");
+            } else {
+                authModeDegistir("login");
+            }
+        });
+    </script>
+
+    <script src="modern-ui.js"></script>
+</body>
+
+</html>
+
+
+
