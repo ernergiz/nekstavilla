@@ -1178,9 +1178,10 @@ a {
 }
 
 .auth-tab {
-    border-radius: 999px;
+    border-radius: 20px;
     color: var(--pm-muted);
     font-weight: 900;
+    padding: 6px;
 }
 
 .auth-tab.active,
