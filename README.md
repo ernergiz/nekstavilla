@@ -52,10 +52,10 @@ nekstavilla/
 ├── siparislerim.html
 ├── hesabim.html
 │
-├── gozluk-detay.html
-├── yelek-detay.html
-├── ayakkabi-detay.html
-├── eldiven-detay.html
+├── vazo.html
+├── canta.html
+├── mum.html
+├── defter.html
 │
 ├── style.css
 ├── modern-ui.css
